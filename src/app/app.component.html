@@ -1,0 +1,8 @@
+<input id="name" type="text" [(ngModel)]="name"/>
+<button (click)="getData()"> Get Data </button>
+
+<div class="row" *ngIf="dictData">
+    <h2>{{dictData["results"][0]["lexicalEntries"][0]["entries"][0]["senses"][0]["definitions"]}}
+        
+    </h2>
+    </div>
